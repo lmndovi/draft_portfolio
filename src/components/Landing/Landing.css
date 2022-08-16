@@ -1,0 +1,34 @@
+.Landing {
+  margin: auto;
+  background: #d7ced0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+}
+
+.Landing-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.Landing-link1 {
+  text-decoration: none;
+  color: #2b2829;
+  opacity: 0.8;
+}
+
+.Landing-link2 {
+  text-decoration: none;
+  color: #71a37c;
+}
+
+.Landing-link3 {
+  text-decoration: none;
+  color: #71a37c;
+}
+
+.Landing-image {
+}
