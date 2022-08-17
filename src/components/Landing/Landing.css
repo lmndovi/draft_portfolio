@@ -36,6 +36,21 @@
 }
 
 .Landing-image {
-  width: 8vw;
+  width: 2vw;
   grid-area: 1 / 2 / 2 / span 3;
+}
+
+.hovered-enter {
+  transform: translate(0);
+}
+.hovered-enter-active {
+  transform: translate(0, 2rem);
+  transition: translate 200ms;
+}
+.hovered-exit {
+  translate: (0, 2rem);
+}
+.hovered-exit-active {
+  transform: translate(0, -2rem);
+  transition: translate 200ms;
 }
