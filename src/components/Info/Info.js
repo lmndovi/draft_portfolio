@@ -1,30 +1,41 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import "./Info.css";
 
 const Info = () => {
+  const [isHover, setIsHover] = useState(false);
+
   return (
     <div className="Info">
       <div className="Info-navbar">
-        <h1>lu.ndovi</h1>
+        <NavLink
+          className="Info-NavLink"
+          to="/"
+          onMouseOver={() => setIsHover(true)}
+          onMouseLeave={() => setIsHover(false)}
+        >
+          {isHover ? "lu.ndovi" : "lu."}
+        </NavLink>
       </div>
       <div className="Info-firstPage">
         <p>I turn dreams into digital products</p>
       </div>
       <div className="Info-coverPhoto">
         <img
+          className="Info-image"
           src="https://drive.google.com/uc?export=download&id=1sMAymaD2K1RTw3tKJlSvJM_fQlXuD04S"
           alt="Lu Ndovi Cover Photo"
         />
       </div>
-      <div>
-        <p>About</p>
-        <p>
-          Hey, my name is Lu. I’m a multi-talented individual with an
-          unrelenting thirst for learning.
+      <div className="Info-secondPage">
+        <p className="Info-subtitle">About</p>
+        <p className="Info-heading">
+          Hi, my name is Lu. I’m a multi-talented individual with an unrelenting
+          thirst for learning.
         </p>
         <p>
-          Having always admired renaissance men and their varied skill sets, I
-          place a lot of value in being competent across a wide range of
+          Having always admired renaissance people and their varied skill sets,
+          I place a lot of value in being competent across a wide range of
           disciplines.
         </p>
         <p>
@@ -36,7 +47,7 @@ const Info = () => {
           the ultimate team player (see sporting background).
         </p>
       </div>
-      <div>
+      <div className="Info-thirdPage">
         <p>
           Aside from work I’ve been described as a semi-professional athlete,
           social salsa dancer, everyday meditator, occasional yogi and lifetime
@@ -53,7 +64,7 @@ const Info = () => {
           forgotten about.
         </p>
       </div>
-      <div>
+      <div className="Info-fourthPage">
         <p>
           Currently I am working remotely with select clients but I am always
           open to new opportunities that may present themselves. Below I have
