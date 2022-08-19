@@ -11,7 +11,7 @@ const Landing = () => {
     <div className="Landing grid-container">
       <div className="Landing-links">
         <NavLink
-          className="Landing-link1"
+          className={`Landing-link1${isHoverHello ? "Hover" : ""}`}
           to="/info"
           onMouseOver={() => setIsHoverHello(true)}
           onMouseLeave={() => setIsHoverHello(false)}
@@ -20,7 +20,7 @@ const Landing = () => {
         </NavLink>
 
         <NavLink
-          className="Landing-link2"
+          className={`Landing-link2${isHoverIm ? "Hover" : ""}`}
           to="/work"
           onMouseOver={() => setIsHoverIm(true)}
           onMouseLeave={() => setIsHoverIm(false)}
@@ -28,7 +28,7 @@ const Landing = () => {
           {isHoverIm ? "Work" : "I'm"}
         </NavLink>
         <NavLink
-          className="Landing-link3"
+          className={`Landing-link3${isHoverLu ? "Hover" : ""}`}
           to="/contact"
           onMouseOver={() => setIsHoverLu(true)}
           onMouseLeave={() => setIsHoverLu(false)}
@@ -36,8 +36,9 @@ const Landing = () => {
           {isHoverLu ? "Contact" : "Lu."}
         </NavLink>
       </div>
-      <div className="Landing-image">
+      <div className="Landing-imageContainer">
         <img
+          className="Landing-image"
           src="https://drive.google.com/uc?export=download&id=1oQFLQlyScpIsQzTqHfyKCziA3nMESBTt"
           alt="Lu Ndovi Portrait"
         />

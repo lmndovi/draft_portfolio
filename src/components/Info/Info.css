@@ -26,9 +26,10 @@
   /* align-content: center; */
   text-align: left;
   font-weight: 600;
-  font-size: 10rem;
-  width: 66rem;
-  margin: 2rem 5rem 0rem 27rem;
+  font-size: 8rem;
+  width: 65rem;
+  padding-bottom: 3rem;
+  margin: 0rem 5rem 0rem 20rem;
   color: rgba(51, 50, 50, 0.7);
 }
 

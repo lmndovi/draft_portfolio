@@ -1,6 +1,7 @@
 .Landing {
   margin: auto;
   background: #d7ced0;
+  padding-bottom: 1rem;
 }
 
 .grid-container {
@@ -17,9 +18,18 @@
   align-items: center;
   justify-content: center;
   font-size: 11rem;
+  z-index: 100;
+  text-align: left;
 }
 
 .Landing-link1 {
+  text-decoration: none;
+  color: rgba(43, 40, 41, 0.8);
+  opacity: 0.8;
+}
+
+.Landing-link1Hover {
+  padding-left: 25rem;
   text-decoration: none;
   color: rgba(43, 40, 41, 0.8);
   opacity: 0.8;
@@ -30,27 +40,32 @@
   color: #71a37c;
 }
 
+.Landing-link2Hover {
+  padding-left: 25rem;
+  text-decoration: none;
+  color: #71a37c;
+}
+
 .Landing-link3 {
   text-decoration: none;
   color: #71a37c;
 }
 
-.Landing-image {
-  width: 2vw;
-  grid-area: 1 / 2 / 2 / span 3;
+.Landing-link3Hover {
+  padding-left: 25rem;
+  text-decoration: none;
+  color: #71a37c;
 }
 
-.hovered-enter {
-  transform: translate(0);
+.Landing-imageContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
-.hovered-enter-active {
-  transform: translate(0, 2rem);
-  transition: translate 200ms;
-}
-.hovered-exit {
-  translate: (0, 2rem);
-}
-.hovered-exit-active {
-  transform: translate(0, -2rem);
-  transition: translate 200ms;
+
+.Landing-image {
+  position: fixed;
+  top: 0rem;
+  left: 40rem;
+  width: 45vw;
 }
